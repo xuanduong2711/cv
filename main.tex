@@ -1,0 +1,135 @@
+%-------------------------
+% FAANG-Style Resume (Jake's Resume format)
+% ATS-friendly | giữ nguyên cấu trúc \input{}
+%-------------------------
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{0pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-2pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom Commands — dùng trong các file \input{}
+%-------------------------
+
+% Dùng cho Education & Experience
+% #1 = Ten truong/cong ty  #2 = Dia diem
+% #3 = Chuyen nganh/Vi tri #4 = Thoi gian
+\newcommand{\resumeSubheading}[4]{
+  \vspace{1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+% Dùng cho Projects
+% #1 = Ten project | Tech stack  #2 = Ngay / "Personal Project"
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+% Bullet point
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{0pt}}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-2pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% Boc ngoai moi \resumeSubheading hoac \resumeProjectHeading
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+% Boc ngoai cac \resumeItem ben trong
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
+
+% Dùng riêng cho Technical Skills — compact hơn
+\newcommand{\resumeSkillListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=-3pt, topsep=0pt]}
+\newcommand{\resumeSkillListEnd}{\end{itemize}\vspace{-6pt}}
+
+%===========================================
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+  {\Huge \scshape Lu Xuan Duong} \\ \vspace{4pt}
+  \small
+  \faPhone\ \href{tel:+840917837287}{0917 837 287} $|$
+  \faEnvelope\ \href{mailto:xuanduong271104@gmail.com}{xuanduong271104@gmail.com} $|$
+  \faLinkedin\ \href{https://linkedin.com/in/xuanduongvn}{linkedin.com/in/xuanduongvn} $|$
+  \faGithub\ \href{https://github.com/xuanduong2711}{xuanduong2711} $|$
+  \faGlobe\ \href{https://xuanduong2711.github.io/}{Portfolio}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{\uppercase{Summary}}
+\input{Projects/summary}
+
+%-----------EDUCATION-----------
+\section{\uppercase{Education}}
+\input{Projects/Education}
+
+%-----------TECHNICAL SKILLS-----------
+\section{\uppercase{Technical Skills}}
+\input{Projects/Tech_skill}
+
+%-----------WORK EXPERIENCE-----------
+\section{\uppercase{Work Experience}}
+\input{Projects/exp}
+
+%-----------PROJECTS-----------
+\section{\uppercase{Projects}}
+\input{Projects/CGV_ETL}
+\input{Projects/CDC}
+
+%-----------LANGUAGES-----------
+\section{\uppercase{Languages}}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Vietnamese:}{ Native} \\
+    \textbf{English:}{ B2} \\
+  }}
+\end{itemize}
+
+\end{document}
