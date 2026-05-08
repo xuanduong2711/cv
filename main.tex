@@ -38,8 +38,8 @@
 
 % Section formatting
 \titleformat{\section}{
-  \vspace{0pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-2pt}]
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
 
 \pdfgentounicode=1
 
@@ -51,20 +51,20 @@
 % #1 = Ten truong/cong ty  #2 = Dia diem
 % #3 = Chuyen nganh/Vi tri #4 = Thoi gian
 \newcommand{\resumeSubheading}[4]{
-  \vspace{1pt}\item
+  \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-8pt}
 }
 
 % Dùng cho Projects
 % #1 = Ten project | Tech stack  #2 = Ngay / "Personal Project"
 \newcommand{\resumeProjectHeading}[2]{
-  \vspace{1pt}\item
+  \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-8pt}
 }
 
 % Bullet point
@@ -72,7 +72,7 @@
   \item\small{#1 \vspace{0pt}}
 }
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-2pt}}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
@@ -82,11 +82,11 @@
 
 % Boc ngoai cac \resumeItem ben trong
 \newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=0pt]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 % Dùng riêng cho Technical Skills — compact hơn
 \newcommand{\resumeSkillListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=-3pt, topsep=0pt]}
-\newcommand{\resumeSkillListEnd}{\end{itemize}\vspace{-6pt}}
+\newcommand{\resumeSkillListEnd}{\end{itemize}\vspace{-8pt}}
 
 %===========================================
 \begin{document}
@@ -116,6 +116,9 @@
 %-----------TECHNICAL SKILLS-----------
 \section{\uppercase{Technical Skills}}
 \input{Projects/Tech_skill}
+
+%-----------NOTABLE SUBJECTS-----------
+\input{Projects/subject}
 
 %-----------WORK EXPERIENCE-----------
 \section{\uppercase{Work Experience}}
