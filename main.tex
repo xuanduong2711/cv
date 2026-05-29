@@ -38,8 +38,8 @@
 
 % Section formatting
 \titleformat{\section}{
-  \vspace{-5pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+  \vspace{-7pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
 
 \pdfgentounicode=1
 
@@ -64,7 +64,7 @@
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-8pt}
+    \end{tabular*}\vspace{-9pt}
 }
 
 % Bullet point
@@ -77,12 +77,12 @@
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 % Boc ngoai moi \resumeSubheading hoac \resumeProjectHeading
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, topsep=0pt, itemsep=0pt, parsep=0pt]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 
 % Boc ngoai cac \resumeItem ben trong
-\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=0pt]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=-1pt, topsep=0pt, parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
 
 % Dùng riêng cho Technical Skills — compact hơn
 \newcommand{\resumeSkillListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=-3pt, topsep=0pt]}
@@ -97,9 +97,9 @@
 %----------HEADING----------
 \begin{center}
   {\Huge \scshape Lu Xuan Duong} \\
-  \vspace{4pt}
+  \vspace{2pt}
   {\Large \textbf{Data Engineer}} \\
-  \vspace{6pt}
+  \vspace{3pt}
   \small
   \faPhone\ \href{tel:+840917837287}{0917 837 287} $|$
   \faEnvelope\ \href{mailto:xuanduong271104@gmail.com}{xuanduong271104@gmail.com} $|$
