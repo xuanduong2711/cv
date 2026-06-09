@@ -1,0 +1,14 @@
+PWD /home/duong/Documents/CV_DE
+INPUT /home/duong/texlive/2026/texmf.cnf
+INPUT /home/duong/texlive/2026/texmf-dist/web2c/texmf.cnf
+INPUT /home/duong/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT /home/duong/Documents/CV_DE/main.tex
+OUTPUT main.log
+INPUT /home/duong/texlive/2026/texmf-dist/tex/latex/base/article.cls
+INPUT /home/duong/texlive/2026/texmf-dist/tex/latex/base/article.cls
+INPUT /home/duong/texlive/2026/texmf-dist/tex/latex/base/size11.clo
+INPUT /home/duong/texlive/2026/texmf-dist/tex/latex/base/size11.clo
+INPUT /home/duong/texlive/2026/texmf-dist/tex/latex/base/size11.clo
+INPUT /home/duong/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /home/duong/texlive/2026/texmf-dist/tex/latex/base/latexsym.sty
+INPUT /home/duong/texlive/2026/texmf-dist/tex/latex/base/latexsym.sty

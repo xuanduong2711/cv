@@ -1,0 +1,18 @@
+# Fdb version 4
+["pdflatex"] 1780936157.60908 "/home/duong/Documents/CV_DE/main.tex" "main.pdf" "main" 1780936157.68273 2
+  "/home/duong/Documents/CV_DE/main.tex" 1780936157.26818 4694 490358611d0a4700fb40d8850b56e3b3 ""
+  "/home/duong/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1136768653 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
+  "/home/duong/texlive/2026/texmf-dist/tex/latex/base/article.cls" 1780258940 20144 e6010938fb17dfbae90a243ad7cf351d ""
+  "/home/duong/texlive/2026/texmf-dist/tex/latex/base/latexsym.sty" 1780258940 2853 fe66bfc0fee620a4e899d128105c83ee ""
+  "/home/duong/texlive/2026/texmf-dist/tex/latex/base/size11.clo" 1780258940 8464 d6d1b8c8ee5d0bc83b2c1251b4fc6dae ""
+  "/home/duong/texlive/2026/texmf-dist/web2c/texmf.cnf" 1770478701 43630 e9fa012910491fe5ae08a72c3c2997a7 ""
+  "/home/duong/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1780931654 2985350 00b2e4181225cd6544df1d238c181485 ""
+  "/home/duong/texlive/2026/texmf.cnf" 1780931133.77139 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
+  "fullpage.sty" 0 -1 0 ""
+  "main.aux" 1780936149.60864 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "main.tex" 1780936157.26818 4694 490358611d0a4700fb40d8850b56e3b3 ""
+  (generated)
+  "main.aux"
+  "main.log"
+  "main.pdf"
+  (rewritten before read)
